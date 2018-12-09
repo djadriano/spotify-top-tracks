@@ -1,0 +1,32 @@
+.#{$namespace}-artist-music {
+  &__artist {
+    font-size: fs('16');
+    line-height: fs('16');
+    color: color('gray');
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 1rem;
+
+    @include min-screen(mq('tablet')) {
+      font-size: fs('20');
+      line-height: fs('20');
+    }
+  }
+
+  &__music {
+    font-size: fs('20');
+    line-height: fs('20');
+    color: color('white');
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include min-screen(mq('tablet')) {
+      font-size: fs('30');
+      line-height: fs('30');
+    }
+  }
+}

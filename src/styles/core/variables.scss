@@ -1,0 +1,56 @@
+// Media Queries
+// ----------------------------------------------------------
+
+$mq: (
+  'mobile': 320px,
+  'tablet': 768px,
+  'laptop': 1024px,
+  'desktop': 1440px
+);
+
+// Guide Colors
+// ----------------------------------------------------------
+
+$colors: (
+  'white': #fff,
+  'black': #000,
+  'green': #1db954,
+  'gray': #b3b3b3,
+  'gray-dark': #4c4c4c,
+  'gradient-black':
+    linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(80, 80, 80, 1) 100%)
+);
+
+// Spaces
+// ----------------------------------------------------------
+
+$spaces: (
+  'little': 0.5rem,
+  'smallest': 2rem,
+  'small': 3rem,
+  'medium': 4rem,
+  'big': 6rem,
+  'biggest': 9rem
+);
+
+// Font sizes
+// ----------------------------------------------------------
+
+$font-sizes: (
+  '16': 1.6rem,
+  '18': 1.8rem,
+  '20': 2rem,
+  '24': 2.4rem,
+  '30': 3rem,
+  '40': 4rem,
+  '60': 6rem,
+  '90': 9rem
+);
+
+// Default variables
+// ----------------------------------------------------------
+
+$base-font-size: 62.5%;
+$namespace: 'spfy';
+$header-height-mobile: 8rem;
+$header-height-desktop: 10rem;

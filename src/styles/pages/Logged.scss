@@ -1,0 +1,78 @@
+.#{$namespace}-logged {
+  &__loading {
+    color: color('white');
+    font-size: fs('30');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    margin-top: $header-height-mobile;
+    align-self: stretch;
+    flex: 100%;
+
+    @include min-screen(mq('tablet')) {
+      padding-top: spaces('small');
+      margin-top: $header-height-desktop;
+    }
+  }
+
+  &__title {
+    font-size: fs('40');
+    line-height: fs('40');
+    color: color('white');
+
+    @include min-screen(mq('tablet')) {
+      font-size: fs('60');
+      line-height: fs('60');
+      text-align: right;
+    }
+
+    @include min-screen(mq('desktop')) {
+      font-size: fs('90');
+      line-height: fs('90');
+    }
+  }
+
+  &__message {
+    font-size: fs('20');
+    line-height: fs('20');
+    color: color('green');
+    text-align: center;
+    margin-top: spaces('medium');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      padding-top: 0.3rem;
+    }
+
+    @include min-screen(mq('tablet')) {
+      font-size: fs('24');
+      line-height: fs('24');
+      margin-top: spaces('big');
+
+      span {
+        padding-top: 0.4rem;
+      }
+    }
+  }
+
+  &__disk {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+
+    g {
+      stroke: color('green');
+    }
+
+    @include min-screen(mq('tablet')) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

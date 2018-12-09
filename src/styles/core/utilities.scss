@@ -1,0 +1,40 @@
+.#{$namespace}-main {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.#{$namespace}-spotify-logo {
+  width: 150%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translate(-30%, -36%);
+  opacity: 0.5;
+  transition: opacity 0ms;
+  will-change: opacity;
+
+  path {
+    fill: color('green');
+  }
+
+  @include min-screen(mq('tablet')) {
+    transform: translate(-30%, -28%);
+  }
+
+  @include min-screen(mq('laptop')) {
+    width: 230%;
+    transform: translate(-46%, -30%);
+  }
+}
+
+.#{$namespace}-container {
+  @each $name, $size in $mq {
+    @include min-screen(mq($name)) {
+      padding-left: grid-margin($name);
+      padding-right: grid-margin($name);
+    }
+  }
+}
