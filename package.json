@@ -12,7 +12,7 @@
     "dev": "NODE_ENV=development webpack-dev-server --mode development --config ./config/webpack.config.js",
     "api": "NODE_ENV=development nodemon server/server.js",
     "dev-api": "yarn run dev & yarn run api",
-    "start": "yarn run dev & yarn run api",
+    "start": "yarn build && yarn dev-api",
     "prod": "NODE_ENV=production nodemon server/server.js",
     "svg-to-react": "svgr --no-prettier -d src/js/components/Icons assets/vectors"
   },
